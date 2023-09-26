@@ -7,5 +7,9 @@
 </head>
 <body>
     <h1>User Facts Page</h1>
+    {% for fact in facts %}
+        <H4>"{{ fact.fact }}"</H4>
+            <h5>submitted by {{fact.submitter}}</h5>
+    {% endfor %}
 </body>
 </html>
